@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  pd:
+    build: .
+    volumes:
+      - ./jupyter:/root/jupyter
+    networks:
+      - docker_default
+      - default
+
+networks:
+  docker_default:
+    external: true
+    name: docker_default
