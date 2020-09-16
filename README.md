@@ -9,4 +9,4 @@ docker-compose up -d
 ```
 
 立ち上げたら`docker-compose logs`でログをみるとシークレットがかかれています。
-`jupyter/recipt`に画像を入れて、jupyterよりpapaerDetectionを実行すれば画像に縁を描写した、画像が出力されます。
+`jupyter/recipt`に画像を入れて、jupyterより`paperDetection.ipynb`を実行すれば`jupyter/maskrecipt`に輪郭抽出用にマスクされた画像が保存され、`jupyter/donerecipt`に縁を着色した画像が出力されます。
